@@ -72,6 +72,11 @@ python -m src.main
 
 The primary endpoint is `POST /api/pack`.
 
+To run locally without Docker:
+```bash
+uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+```
+
 **Request Payload Example**:
 ```bash
 {
@@ -110,7 +115,7 @@ The packing logic is driven by a Reinforcement Learning agent trained in a custo
 
 1. **Observation Space**: A 2D Heightmap represents the current state of the container, combined with the dimensions of the next items in the queue (Lookahead).
 2. **Action Space**: The agent selects a coordinate $(x, y)$ and a rotation $(0-5)$.
-3. Inference: Models are exported to **ONNX** format to allow high-speed inference without the overhead of heavy deep learning frameworks (like PyTorch or TensorFlow) in production.
+3. **Inference**: Models are exported to **ONNX** format to allow high-speed inference without the overhead of heavy deep learning frameworks (like PyTorch or TensorFlow) in production.
 
 **Physics & Action Masking**
 
