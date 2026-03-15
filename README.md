@@ -60,7 +60,7 @@ To run the API using **Docker** (recommended):
 docker-compose up --build
 ```
 
-The API will be available at http://localhost:8000. You can access the interactive documentation at http://localhost:8000/docs.
+The API will be available at `http://localhost:8000`. You can access the interactive documentation at `http://localhost:8000/docs`.
 
 To run **locally**:
 
