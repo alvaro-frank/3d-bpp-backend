@@ -2,9 +2,9 @@ import os
 import uvicorn
 from fastapi import FastAPI
 
-from src.infrastructure.adapters.ingoing.routers import pack_router, get_use_case
-from src.infrastructure.adapters.outgoing.onnx_agent import OnnxAgentPredictor
-from src.application.use_cases.pack_container_use_case import PackContainerUseCase
+from infrastructure.adapters.ingoing.routers import pack_router, get_use_case
+from infrastructure.adapters.outgoing.onnx_agent import OnnxAgentPredictor
+from application.use_cases.pack_container_use_case import PackContainerUseCase
 
 def create_app() -> FastAPI:
     """
@@ -47,4 +47,4 @@ if __name__ == "__main__":
     """
     Entry point for running the server locally for development.
     """
-    uvicorn.run("src.main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
