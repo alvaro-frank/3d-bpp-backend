@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 
-from src.infrastructure.schemas.request import PackRequest
-from src.infrastructure.schemas.response import PackResponse, PackedBoxResponse, PositionResponse
-from src.application.dtos.dtos import ContainerInputDTO, BoxInputDTO
-from src.application.use_cases.pack_container_use_case import PackContainerUseCase
+from infrastructure.schemas.request import PackRequest
+from infrastructure.schemas.response import PackResponse, PackedBoxResponse, PositionResponse
+from application.dtos.dtos import ContainerInputDTO, BoxInputDTO
+from application.use_cases.pack_container_use_case import PackContainerUseCase
 
 pack_router = APIRouter(prefix="/api", tags=["Packing"])
 

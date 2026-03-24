@@ -1,8 +1,8 @@
 import numpy as np
 import onnxruntime as ort
 from typing import List
-from src.domain.entities import Container, Box, PackedBox, Position
-from src.application.ports.ports import IAgentPredictor
+from domain.entities import Container, Box, PackedBox, Position
+from application.ports.ports import IAgentPredictor
 
 class OnnxAgentPredictor(IAgentPredictor):
     """
