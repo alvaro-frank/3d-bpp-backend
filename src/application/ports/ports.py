@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import List
-from src.domain.entities import Container, Box, PackedBox
+from domain.entities import Container, Box, PackedBox
 
 class IAgentPredictor(ABC):
     """

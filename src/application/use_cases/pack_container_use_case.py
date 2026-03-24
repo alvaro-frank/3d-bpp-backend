@@ -1,7 +1,7 @@
 from typing import List
-from src.domain.entities import Container, Box, PackedBox, Position
-from src.application.ports.ports import IAgentPredictor
-from src.application.dtos.dtos import (
+from domain.entities import Container, Box, PackedBox, Position
+from application.ports.ports import IAgentPredictor
+from application.dtos.dtos import (
     ContainerInputDTO, 
     BoxInputDTO, 
     PackedBoxOutputDTO, 
