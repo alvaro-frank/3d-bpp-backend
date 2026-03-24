@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import Mock
-from src.application.use_cases.pack_container_use_case import PackContainerUseCase
-from src.application.dtos.dtos import ContainerInputDTO, BoxInputDTO
+from application.use_cases.pack_container_use_case import PackContainerUseCase
+from application.dtos.dtos import ContainerInputDTO, BoxInputDTO
 
 def test_pack_container_use_case_orchestration():
     """

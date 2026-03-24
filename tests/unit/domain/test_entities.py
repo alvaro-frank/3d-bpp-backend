@@ -1,5 +1,5 @@
 import pytest
-from src.domain.entities import Box, Container, Position, PackedBox
+from domain.entities import Box, Container, Position, PackedBox
 
 def test_box_volume_calculation():
     """

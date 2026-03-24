@@ -1,8 +1,8 @@
 import pytest
 import os
-from src.application.use_cases.pack_container_use_case import PackContainerUseCase
-from src.infrastructure.adapters.outgoing.onnx_agent import OnnxAgentPredictor
-from src.application.dtos.dtos import ContainerInputDTO, BoxInputDTO
+from application.use_cases.pack_container_use_case import PackContainerUseCase
+from infrastructure.adapters.outgoing.onnx_agent import OnnxAgentPredictor
+from application.dtos.dtos import ContainerInputDTO, BoxInputDTO
 
 def test_integration_use_case_with_real_onnx():
     """

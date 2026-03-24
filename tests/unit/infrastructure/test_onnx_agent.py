@@ -1,8 +1,8 @@
 import pytest
 import numpy as np
 import os
-from src.infrastructure.adapters.outgoing.onnx_agent import OnnxAgentPredictor
-from src.domain.entities import Container, Box
+from infrastructure.adapters.outgoing.onnx_agent import OnnxAgentPredictor
+from domain.entities import Container, Box
 
 @pytest.fixture
 def predictor():

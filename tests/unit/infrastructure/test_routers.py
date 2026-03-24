@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
-from src.main import app
-from src.infrastructure.adapters.ingoing.routers import get_use_case
+from main import app
+from infrastructure.adapters.ingoing.routers import get_use_case
 from unittest.mock import Mock
 import pytest
 
